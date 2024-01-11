@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="earth1.jpg">
+    <title>Astroma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#show").click(function () {
+                $("#navbar").slideToggle(800)
+                $(this).attr()
+            })
+
+        })
+
+        function fun(){
+        alert("Sign in first")
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        html{
+            cursor: none;
+        }
+
+        a:hover{
+            cursor: none;
+        }
+
+        button:hover{
+            cursor: none;
+        }
+
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        #head {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-image: url("stars3.jpg");
+            background-size: 100% 100%;
+            backdrop-filter: 50px;
+        }
+
+        .sun{
+            height: 100px;
+            width: 100px;
+            background-image: url("sun1.jpg");
+            background-size: 100% 100%;
+            box-shadow: -2px -1px 78px 27px rgba(255, 47, 0, 0.905);
+            -webkit-box-shadow: -2px -1px 78px 27px rgba(255, 133, 46, 0.73);
+            -moz-box-shadow: -2px -1px 100px 500px rgb(255, 184, 31);
+            border-radius: 50%;
+            position: absolute;
+            top: 40%;
+            left: 47%;
+            animation: sun 20s linear infinite;
+        }
+
+        .mercury{
+            height: 10px;
+            width: 10px;
+            background-image: url("mercury1.jpg");
+            background-size: 100% 100%;
+            border-radius: 50%;
+            box-shadow: -0px -0px 20px 0px rgba(255, 47, 0, 0.235);
+            -webkit-box-shadow: -2px -1px 78px 27px rgba(255, 133, 46, 0.209);
+            -moz-box-shadow: -2px -1px 78px 27px rgb(255, 255, 255);
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            animation: mercury 3s linear infinite;
+        }
+
+        .venus{
+            height: 20px;
+            width: 20px;
+            background-image: url("venus.webp");
+            background-size: 120% 120%;
+            box-shadow: -0px -0px 20px 0px rgba(255, 178, 161, 0.235);
+            -webkit-box-shadow: -2px -1px 78px 27px rgba(255, 106, 0, 0.209);
+            -moz-box-shadow: -2px -1px 78px 27px rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: 45%;
+            left: 49%;
+            animation: venus 4s linear infinite;
+        }
+
+        .earth{
+            height: 40px;
+            width: 40px;
+            background-image: url("earth1.jpg");
+            background-size: 100% 100%;
+            box-shadow: -0px -0px 20px 0px rgba(0, 189, 236, 0.171);
+            -webkit-box-shadow: -2px -1px 78px 27px rgba(169, 251, 255, 0.162);
+            -moz-box-shadow: -2px -1px 78px 27px rgba(255, 255, 255, 0.206);
+            border-radius: 50%;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            animation: earth 5s linear infinite;
+        }
+
+        .mars{
+            height: 20px;
+            width: 20px;
+            background-image: url("mars.png");
+            background-size: 100% 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            animation: mars 6s linear infinite;
+        }
+
+        .jupiter{
+            height: 100px;
+            width: 100px;
+            background-image: url("jupiter3.jpg");
+            background-size: 110% 110%;
+            box-shadow: -0px -0px 20px 0px rgba(161, 161, 161, 0.152);
+            -webkit-box-shadow: -2px -1px 78px 27px rgba(253, 181, 181, 0.137);
+            -moz-box-shadow: -2px -1px 78px 27px rgba(87, 43, 0, 0.124);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation: jupiter 10s linear infinite;
+        }
+       
+
+        
+        @keyframes sun{
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes mercury{
+            0% {
+                transform: rotate(0deg)
+                translate(-100px)
+                rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+                translate(-100px)
+                rotate(-360deg);
+            }
+        } 
+        @keyframes venus{
+            0% {
+                transform: rotate(0deg)
+                translate(-120px)
+                rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+                translate(-120px)
+                rotate(-360deg);
+            }
+        } 
+        @keyframes earth{
+            0% {
+                transform: rotate(0deg)
+                translate(-190px)
+                rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+                translate(-190px)
+                rotate(-360deg);
+            }
+        } 
+        @keyframes mars{
+            0% {
+                transform: rotate(0deg)
+                translate(-250px)
+                rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+                translate(-250px)
+                rotate(-360deg);
+            }
+        } 
+        @keyframes jupiter{
+            0% {
+                transform: rotate(0deg)
+                translate(-450px)
+                rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+                translate(-450px)
+                rotate(-360deg);
+            }
+        } 
+
+        .logo {
+            width: 100px;
+        }
+
+        .nav1 {
+            width: 85%;
+            height: 15%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            color: white;
+            padding: 10px 25px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 20px;
+            outline: none;
+            transition: 0.5s ease;
+        }
+
+        button:hover {
+            transform: translate(0px, 5px);
+            box-shadow: 0px 0px 7px rgb(255, 255, 255);
+        }
+
+        .headline {
+            color: white;
+            position: absolute;
+            top: 35%;
+            left: 8%;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 5px 0 10px;
+            font-family: 'Trebuchet MS';
+            line-height: 80px;
+        }
+
+        h1:hover {
+            text-shadow: 0px 0px 5px rgb(171, 171, 171);
+        }
+
+        .headline button {
+            margin-top: 20px;
+        }
+
+        .nav2 {
+            width: 50px;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #navbar {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(#4e4e4e63, #00000000);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            overflow: hidden;
+            display: none;
+            position: fixed;
+        }
+
+        #navbar ul {
+            display: flex;
+            justify-content: space-evenly;  
+            width:100%
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight:lighter;
+            padding: 0px 5px;
+            font-size: 12px;
+        }
+
+        
+        #navbar ul li{
+            line-height: 30px;
+            list-style: none;
+        }
+
+
+        #men {
+            font-size: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.555);
+            margin: 10px auto;
+            width: auto;
+        }
+
+        #show i {
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.87);
+        }
+
+        .social i {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            margin: 10px auto;
+            width: 50px;
+            transition: 0.4s ease;
+        }
+
+        .social i:hover {
+            color: rgb(0, 106, 155);
+            transform: matrix(0, 1, 1, 0, 0, 0);
+        }
+
+        .useful i {
+            font-size: 15px;
+            width: 35px;
+            text-align: center;
+            color: white;
+            bottom: 30px;
+            margin: 10px auto;
+            transition: 0.6s ease;
+        }
+
+        .useful i:hover {
+            transform: scale(1.7);
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 230px;
+            transform: translateY(-50%);
+        }
+
+        .useful {
+            width: 50px;
+            text-align: center;
+        }
+
+
+        @media screen and (max-width:600px) {
+            h1 {
+                font-size: 35px;
+                line-height: 50px;
+            }
+
+            .nav2 {
+                width: 100%;
+                height: 40px;
+                background: linear-gradient(#a5a5a51c, #000000);
+                position: absolute;
+                bottom: 0px;
+                top: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .social i {
+                font-size: 15px;
+            }
+
+            .useful i {
+                display: none;
+            }
+
+            #men {
+                margin: auto;
+                font-size: 26px;
+                margin-left: 20px;
+            }
+
+            #head {
+                background-image: url("alien.gif    ");
+                background-repeat: no-repeat;
+            }
+
+            .social {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                transform: translateY(0%);
+            }
+
+            .con {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sun {
+                display: none;
+            }
+            .mars{
+                display: none;
+            }
+            .jupiter{
+                display: none;
+            }
+            .earth{
+                display: none;
+            }
+            
+            .venus{
+                display: none;
+            }
+            .mercury {
+                display: none;
+            }
+
+
+        }
+
+        #content1 {
+            width: 90%;
+            background-color: black;
+            border-radius: 20px;
+            margin: 60px auto;
+        }
+
+        .con {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .con h1{
+            text-shadow: -2px -1px 78px  rgba(255, 255, 255, 0.905);
+        }
+
+        .con i:hover{
+            transform: translate(5px, -10px);
+        }
+
+        .con i{
+            text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.355);
+        }
+
+        .planet1:hover {
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+        }
+
+        .planet2:hover {
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+        }
+
+        .planet3:hover {
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+        }
+
+        .planet4:hover {
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+        }
+
+        .planet1 {
+            height: 250px;
+            width: 250px;
+            margin: 30px;
+            background-image: url("pl11.png");
+            background-size: 100% 100%;
+            border: 1px solid white;
+            border-radius: 5px 150px 5px 5px;
+            transition: 0.6s ease;
+        }
+
+        .planet2 {
+            height: 250px;
+            width: 250px;
+            margin: 30px;
+            background-image: url("pl2.png");
+            background-size: 100% 100%;
+            border: 1px solid white;
+            border-radius: 5px 150px 5px 5px;
+            transition: 0.6s ease;
+        }
+
+        .planet3 {
+            height: 250px;
+            width: 250px;
+            margin: 30px;
+            background-image: url("pl3.png");
+            background-size: 100% 100%;
+            border: 1px solid white;
+            border-radius: 5px 150px 5px 5px;
+            transition: 0.6s ease;
+        }
+
+        .planet4 {
+            height: 250px;
+            width: 250px;
+            margin: 30px;
+            background-image: url("pl4.png");
+            background-size: 100% 100%; 
+            border: 1px solid white;
+            border-radius: 5px 150px 5px 5px;
+            transition: 0.6s ease;
+        }
+
+.content2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+    transition: 10s ;
+}
+
+.plinfo{
+    width: 40%;
+    color: white;
+}
+.plinfo h1{
+    letter-spacing: 5px;
+    font-family: monospace;
+}
+
+.plinfo p{
+    letter-spacing: 3px;
+}
+
+.plimg{
+    width: 40%;
+}
+.plimg img{
+    animation: pluto 50s linear infinite;
+}
+
+@keyframes pluto{
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+.content3 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    transition: 10s ;
+}
+
+.plinfo{
+    width: 40%;
+    color: rgb(255, 255, 255);
+}
+.plinfo h1{
+    letter-spacing: 5px;
+    font-family: monospace;
+}
+
+.plinfo p{
+    letter-spacing: 3px;
+}
+
+.plimg{
+    width: 40%;
+}
+.plimg img{
+    animation: eris 50s linear infinite;
+}
+.content3 .plimg{
+    border-radius: 50%;
+}
+
+@keyframes eris{
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+.more{
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.more button:hover{
+    transform: translate(-0px, 10px);
+}
+
+footer{
+    height: 500px;
+    background-image: url("footer4.jpg");
+    background-size: 100% 150%;
+    backdrop-filter: blur;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.line{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 20%;
+    height: 300px;
+    backdrop-filter:blur(10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.line a{
+    transition: 0.4s ease-in-out;
+}
+.line a:hover{
+    color: rgb(255, 255, 255);
+    scale: 1.2;
+    text-shadow: 0px 0px 10px rgb(2, 209, 255);
+}
+.logoo{
+    border-radius: 10px;
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    align-items: center;
+    font-size: 40px;
+}
+
+@media screen and (max-width:600px){
+    .plinfo{
+        margin-top: 200px;
+    }
+    .content3{
+        margin-top: 500px;
+        display: none;
+    }
+    .more{
+        margin-top: 450px;
+    }
+    .line{
+        height: 200px;
+    }
+    .line a{
+        font-size: 10px;
+    }
+    .logoo h3{
+        font-size: 20px;
+    }
+}
+
+.cursor{
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transition: .10s;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div class="sun"></div>
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth"></div>
+        <div class="mars"></div>
+        <div class="jupiter"></div>
+
+        
+
+        <div id="navbar">
+            <ul>
+                <li><i class="fa fa-home" aria-hidden="true" style="color: white;"></i><a href="#head">Home</a></li>
+                <li><i class="fa fa-code" aria-hidden="true" style="color: white;"></i><a href="calci.html">Viwe Code</a></li>
+                <li><i class="fa fa-question" aria-hidden="true" style="color: white;"></i><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="nav1">
+            <h3 style="color: white;">PR⨴MATHIOUS¶</h3>
+            <a href="Statelogin.html"><button type="button">Sign Up</button></a>
+        </div>
+        <div class="headline">
+            <small>Welcome to world of nebula</small>
+            <h1>Astronoma</h1>
+            <small>The space carrier represented by the constellation <br> Aquarius is Ganymede, a beautiful Phrygian
+                youth. <br> Ganymede was the son of Tros,
+                king of Troy (according to Lucian,<br> he was also the son of Dardanus).</small><br>
+            <a href="#content1"><button type="button">See more</button></a>
+        </div>
+        <div class="nav2">
+            <label for="check" id="men"><i class="fa fa-bars" aria-hidden="true" id="show"></i></label>
+
+            <div class="social">
+                <a href="Sociallinks.html"><i class="fa-brands fa-facebook"></i></a><br>
+                <a href="Sociallinks.html"><i class="fa-brands fa-twitter"></i></a><br>
+                <a href="Sociallinks.html"><i class="fa-brands fa-instagram"></i></a><br>
+                <a href="Sociallinks.html"><i class="fa-brands fa-telegram"></i></a><br>
+                <a href="Sociallinks.html"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="useful">
+                <i class="fa fa-question" aria-hidden="true"></i><br>
+                <i class="fa fa-share-alt" aria-hidden="true" style="margin-bottom: 30px;"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="know">
+        <h3 style="text-align: center; color: rgb(255, 255, 255); margin-top: 170px; font-size: 50px;">Visit Our Solar
+            System</h3>
+    </div>
+    <div id="content1">
+
+        <div class="con">
+            <div class="planet1">
+                <a href="Mars.html"><i class="fa fa-rocket" aria-hidden="true"
+                        style="text-align: center; color: rgba(255, 255, 255, 0.993); margin: 13px 220px; font-size: 20px;"></i></a>
+                <h1 style="text-align: center; color: rgba(255, 255, 255, 0.781); margin-top: 125px; font-size: 50px;">
+                    Mars</h1>
+            </div>
+            <div class="planet2">
+                <a href="Saturn.html"><i class="fa fa-rocket" aria-hidden="true"
+                        style="text-align: center; color: rgba(255, 255, 255, 0.993); margin: 13px 220px; font-size: 20px;"></i></a>
+                <h1 style="text-align: center; color: rgba(255, 255, 255, 0.781); margin-top: 125px; font-size: 50px;">
+                    Saturn</h1>
+            </div>
+            <div class="planet3">
+                <a href="Earth.html"><i class="fa fa-rocket" aria-hidden="true"
+                        style="text-align: center; color: rgba(255, 255, 255, 0.993); margin: 13px 220px; font-size: 20px;"></i></a>
+                <h1 style="text-align: center; color: rgba(255, 255, 255, 0.781); margin-top: 125px; font-size: 50px;">
+                    Earth</h1>
+            </div>
+            <div class="planet4">
+                <a href="Neptune.html"><i class="fa fa-rocket" aria-hidden="true"
+                        style="text-align: center; color: rgba(255, 255, 255, 0.993); margin: 13px 220px; font-size: 20px;"></i></a>
+                <h1 style="text-align: center; color: rgba(255, 255, 255, 0.781); margin-top: 125px; font-size: 50px;">
+                    Neptune</h1>
+            </div>
+        </div>
+
+        <div id="info1">
+            <p style="color: white; text-align: center; margin: 10px; margin-top: 10;">An
+                astronomical object, celestial object, stellar object or heavenly body is
+                a naturally occurring physical entity, association, or structure that exists
+                within the observable universe. In astronomy, the terms object and body
+                are often used interchangeably. However, an astronomical body or celestial
+                body is a single, tightly bound, less cohesively bound structure, which
+                may consist of multiple bodies or even other objects with substructures.</p>
+        </div>
+    </div>
+    
+<div class="content2">
+    <div class="plinfo">
+        <h1>The Lonely</h1>
+        <p>Like Uranus, Pluto is lying on its "side", with an axial tilt of 120Âº, leading to extreme seasonal variations. At its solstices, one-fourth of the planet is in continuous daylight, and one-fourth in continuous darkness.</p>
+        
+        <h1>Moons</h1>
+        <p>Pluto has five known moons: Charon, Nix, Hydra, Kerberos, and Styx. Pluto and Charon are sometimes described as a binary system because the barycenter of their orbits does not lie within either body.</p>
+        
+        <h1>Discovery</h1>
+        <p>Discovered in 1930 by astronomer Clyde Tombaugh, Pluto was originally classified as the 9th planet from the Sun. However, the discovery of similar-sized objects within the Kuiper Belt, prompted the International Astronomical Union to re-classify Pluto in 2006 aÂ dwarf planet.</p>
+    </div>
+    <div class="plimg"><img src="pluto.png" ></div>
+</div>
+
+
+<div class="content3">
+    <div class="plimg"><img src="astroid1.gif" height="500px " ></div>
+    <div class="plinfo">
+        <h1>The Eris</h1>
+        <p>Discovered in January 2005, Eris is the furthest dwarf planet from the Sun and the largest and most massive of the dwarf planets.</p>
+        
+        <h1>Size</h1>
+        <p>As the 9th largest/most massive object known to directly orbit the Sun, Eris was briefly referred to as the 10th planet. Eris was officialy classified as dwarf planet in August 2006.</p>
+        
+        <h1>Atmosphere</h1>
+        <p>Eris is often so far from the Sun that its atmosphere collapses and freezes on the surface in an icy glaze. As Eris moves closer to the Sun, it is expected that the surface will warm up and reveal a rocky surface.</p>
+    </div>  
+</div>
+
+<div class="more">
+    <a href="#"><button><h2>VIEW MORE DWARF</h2></button></a>
+</div>
+
+<footer>
+    <div class="line">
+        <a onclick="fun()"><p>About Us</p><br><br></a>
+        <a onclick="fun()"><p>Our Heritage</p><br><br></a>
+        <a onclick="fun()"><p> Our Company</p><br><br></a>
+        <a onclick="fun()"><p>Coordinates</p></a>
+    </div>
+    <div class="logoo"><h3 style="color: white;">PR⨴MATHIOUS¶</h3></div>
+    <div class="line">
+        <a onclick="fun()"><p>Responsibility</p><br><br></a>
+        <a onclick="fun()"><p>Community</p><br><br></a>
+        <a onclick="fun()"><p>Ethical Sourcing</p><br><br></a>
+        <a onclick="fun()"><p>Environment</p><br><br></a>
+        <a onclick="fun()"><p> Diversity</p></a>
+    </div>
+</footer>
+<div class="cursor"></div>
+<script>
+    var cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+</body>
+
+</html>
